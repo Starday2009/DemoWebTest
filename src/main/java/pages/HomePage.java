@@ -13,9 +13,12 @@ public class HomePage {
   CommonActions commonActions;
 
   String filterName;
-  private By testTagName = By.xpath("//a[contains(@class, 'tag-default tag-pill ng-binding ng-scope')]");
-  private By dragonsTagName = By.xpath("//a[contains(@class, 'tag-default tag-pill ng-binding ng-scope')][3]");
-  private By currentHashTag = By.xpath("//a[contains(@class, 'nav-link active ng-binding') and child::text()]");
+  private By testTagName =
+      By.xpath("//a[contains(@class, 'tag-default tag-pill ng-binding ng-scope')]");
+  private By dragonsTagName =
+      By.xpath("//a[contains(@class, 'tag-default tag-pill ng-binding ng-scope')][3]");
+  private By currentHashTag =
+      By.xpath("//a[contains(@class, 'nav-link active ng-binding') and child::text()]");
 
   public HomePage() {
     this.driver = WebDriverFactory.getDriver();

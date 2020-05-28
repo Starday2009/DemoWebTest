@@ -7,14 +7,15 @@ This is the Java repository with UI tests.
 
 ```bash
 Have a JDK installed
-Have Maven installed and available on your PATH or IDE
+Have Maven installed 
+
 ```
 
 
 ## Run tests
 Move to folder with test:
 ```
-cd /DemoProjectWebAuto 
+cd /DemoWebTest 
 ```
 
 Command for run tests:
@@ -26,7 +27,7 @@ Generate allure report:
 ```
 allure generate --clean
 ```
-Open allure reports:
+Open allure report:
 ```
 allure open
 ```

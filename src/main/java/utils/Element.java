@@ -32,18 +32,6 @@ public class Element extends CommonActions implements WebElement {
     }
   }
 
-  public void clickWithoutWait() {
-    try {
-      element.click();
-    } catch (StaleElementReferenceException e) {
-      element.click();
-    }
-  }
-
-  public WebElement getWebElement() {
-    return element;
-  }
-
   @Override
   public void submit() {
     element.submit();
@@ -53,11 +41,6 @@ public class Element extends CommonActions implements WebElement {
   public void sendKeys(CharSequence... keysToSend) {
     loggerPrint(String.format("Enter value: %s", keysToSend));
     element.sendKeys(keysToSend);
-  }
-
-  public void sendKeysAfterClear(CharSequence... keysToSend) {
-    clear();
-    sendKeys(keysToSend);
   }
 
   @Override

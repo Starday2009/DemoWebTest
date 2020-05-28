@@ -1,5 +1,4 @@
 import io.qameta.allure.Description;
-import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
 import pages.HomePage;
 
