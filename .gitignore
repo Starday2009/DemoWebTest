@@ -1,0 +1,5 @@
+.idea
+allure-results/*
+allure-reports/*
+target/*
+DemoProjectWebAuto.iml

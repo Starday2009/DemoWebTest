@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu May 28 22:41:40 EEST 2020","Thu May 28 22:41:42 EEST 2020","2527","Test Suite","Check filters","FilterTest","FilterTest","filtersTest","filtersTest","Test filters with hashtag #test and #dreagons"

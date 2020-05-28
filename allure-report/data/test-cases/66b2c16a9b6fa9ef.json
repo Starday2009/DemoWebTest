@@ -1,0 +1,161 @@
+{
+  "uid" : "66b2c16a9b6fa9ef",
+  "name" : "filtersTest",
+  "fullName" : "FilterTest.filtersTest",
+  "historyId" : "1a6d4e061da950bf4ca51a1a09ba23f8",
+  "time" : {
+    "start" : 1590692079349,
+    "stop" : 1590692081267,
+    "duration" : 1918
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1590692075854,
+      "stop" : 1590692079275,
+      "duration" : 3421
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Select filter #test",
+      "time" : {
+        "start" : 1590692080326,
+        "stop" : 1590692081060,
+        "duration" : 734
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Assert test tag is displayed",
+      "time" : {
+        "start" : 1590692081060,
+        "stop" : 1590692081125,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Select filter #dragons",
+      "time" : {
+        "start" : 1590692081125,
+        "stop" : 1590692081222,
+        "duration" : 97
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Assert #dragons tag is displayed",
+      "time" : {
+        "start" : 1590692081222,
+        "stop" : 1590692081265,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1590692081406,
+      "stop" : 1590692081515,
+      "duration" : 109
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "FilterTest"
+  }, {
+    "name" : "testClass",
+    "value" : "FilterTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "filtersTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "DemoProjectWebAuto"
+  }, {
+    "name" : "subSuite",
+    "value" : "FilterTest"
+  }, {
+    "name" : "host",
+    "value" : "Oksanas-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "56192@Oksanas-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "66b2c16a9b6fa9ef.json",
+  "parameterValues" : [ ]
+}

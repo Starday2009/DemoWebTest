@@ -1,0 +1,29 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Test Suite",
+    "children" : [ {
+      "name" : "Check filters",
+      "children" : [ {
+        "name" : "FilterTest",
+        "children" : [ {
+          "name" : "filtersTest",
+          "uid" : "9683f0235ee6eb1",
+          "parentUid" : "e3ce15de5c9e4d7870d149b4cd0a9225",
+          "status" : "passed",
+          "time" : {
+            "start" : 1590694900072,
+            "stop" : 1590694902599,
+            "duration" : 2527
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e3ce15de5c9e4d7870d149b4cd0a9225"
+      } ],
+      "uid" : "1a6b5cf135cc9172b6f5cb651d787b98"
+    } ],
+    "uid" : "70f4612f25dd624e3fa5910864552138"
+  } ]
+}

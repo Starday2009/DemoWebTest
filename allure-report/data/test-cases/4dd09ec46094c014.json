@@ -1,0 +1,134 @@
+{
+  "uid" : "4dd09ec46094c014",
+  "name" : "filtersTest",
+  "fullName" : "FilterTest.filtersTest",
+  "historyId" : "1a6d4e061da950bf4ca51a1a09ba23f8",
+  "time" : {
+    "start" : 1590688365829,
+    "stop" : 1590688371478,
+    "duration" : 5649
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1590688361585,
+      "stop" : 1590688365593,
+      "duration" : 4008
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Select filter #test",
+      "time" : {
+        "start" : 1590688371152,
+        "stop" : 1590688371335,
+        "duration" : 183
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Select filter #butt",
+      "time" : {
+        "start" : 1590688371335,
+        "stop" : 1590688371476,
+        "duration" : 141
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1590688371591,
+      "stop" : 1590688371694,
+      "duration" : 103
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "FilterTest"
+  }, {
+    "name" : "testClass",
+    "value" : "FilterTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "filtersTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Filter Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Filter by hastag"
+  }, {
+    "name" : "subSuite",
+    "value" : "FilterTest"
+  }, {
+    "name" : "host",
+    "value" : "Oksanas-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "54747@Oksanas-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Check filters"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4dd09ec46094c014.json",
+  "parameterValues" : [ ]
+}

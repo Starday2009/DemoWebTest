@@ -1,0 +1,164 @@
+{
+  "uid" : "50213069dfd42f6b",
+  "name" : "filtersTest",
+  "fullName" : "FilterTest.filtersTest",
+  "historyId" : "1a6d4e061da950bf4ca51a1a09ba23f8",
+  "time" : {
+    "start" : 1590693842732,
+    "stop" : 1590693845543,
+    "duration" : 2811
+  },
+  "description" : "Test filters with hashtag #test and #dreagons",
+  "descriptionHtml" : "<p>Test filters with hashtag #test and #dreagons</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1590693838529,
+      "stop" : 1590693842515,
+      "duration" : 3986
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Test filters with hashtag #test and #dreagons",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Select filter #test",
+      "time" : {
+        "start" : 1590693844120,
+        "stop" : 1590693845348,
+        "duration" : 1228
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Assert test tag is displayed",
+      "time" : {
+        "start" : 1590693845348,
+        "stop" : 1590693845402,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Select filter #dragons",
+      "time" : {
+        "start" : 1590693845402,
+        "stop" : 1590693845497,
+        "duration" : 95
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Assert #dragons tag is displayed",
+      "time" : {
+        "start" : 1590693845497,
+        "stop" : 1590693845539,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1590693845647,
+      "stop" : 1590693845752,
+      "duration" : 105
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "FilterTest"
+  }, {
+    "name" : "testClass",
+    "value" : "FilterTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "filtersTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Check filters"
+  }, {
+    "name" : "subSuite",
+    "value" : "FilterTest"
+  }, {
+    "name" : "host",
+    "value" : "Oksanas-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "56523@Oksanas-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "50213069dfd42f6b.json",
+  "parameterValues" : [ ]
+}
