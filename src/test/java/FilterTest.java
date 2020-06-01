@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 
 public class FilterTest extends BaseTest {
-  @Description("Test filters with hashtag #test and #dreagons")
+  @Description("Test filters with hashTag")
   @Test()
   public void filtersTest() {
     HomePage homePage = new HomePage();

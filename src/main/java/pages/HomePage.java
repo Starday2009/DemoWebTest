@@ -12,11 +12,11 @@ public class HomePage {
   WebDriver driver;
   CommonActions commonActions;
 
-  String filterName;
-  private By testTagName =
-      By.xpath("//a[contains(@class, 'tag-default tag-pill ng-binding ng-scope')]");
-  private By dragonsTagName =
-      By.xpath("//a[contains(@class, 'tag-default tag-pill ng-binding ng-scope')][3]");
+  String firstFilterName;
+  String secondFilterName;
+
+  private By hashTagList =
+          By.xpath("//a[contains(@class, 'tag-default tag-pill ng-binding ng-scope') and child::text()]");
   private By currentHashTag =
       By.xpath("//a[contains(@class, 'nav-link active ng-binding') and child::text()]");
 
@@ -33,27 +33,27 @@ public class HomePage {
 
   @Step("Select filter #test")
   public void selectFirstFilter() {
-    commonActions.find(testTagName).click();
+    firstFilterName = commonActions.find(hashTagList).findElements(hashTagList).get(0).getText();
+    commonActions.find(hashTagList).findElements(hashTagList).get(0).click();
   }
 
   @Step("Assert test tag is displayed")
   public void assertTestTag() {
     commonActions.loggerPrint("Assert that #test tag is displayed");
-    commonActions.find(currentHashTag).isDisplayed();
-    filterName = driver.findElement(currentHashTag).getText();
-    Assert.assertEquals(filterName, "test");
+    String filterName = commonActions.find(currentHashTag).getText();
+    Assert.assertEquals(filterName, firstFilterName);
   }
 
   @Step("Select filter #dragons")
   public void selectSecondFilter() {
-    commonActions.find(dragonsTagName).click();
+    secondFilterName = commonActions.find(hashTagList).findElements(hashTagList).get(2).getText();
+    commonActions.find(hashTagList).findElements(hashTagList).get(2).click();
   }
 
   @Step("Assert #dragons tag is displayed")
   public void assertDragonsTag() {
     commonActions.loggerPrint("Assert that #dragons tag is displayed");
-    commonActions.find(currentHashTag).isDisplayed();
-    filterName = driver.findElement(currentHashTag).getText();
-    Assert.assertEquals(filterName, "dragons");
+    String filterName = commonActions.find(currentHashTag).getText();
+    Assert.assertEquals(filterName, secondFilterName);
   }
 }
