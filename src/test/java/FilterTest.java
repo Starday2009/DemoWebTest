@@ -8,9 +8,8 @@ public class FilterTest extends BaseTest {
   public void filtersTest() {
     HomePage homePage = new HomePage();
     homePage.navigate();
-    homePage.selectFirstFilter();
-    homePage.assertTestTag();
-    homePage.selectSecondFilter();
-    homePage.assertDragonsTag();
+    homePage.selectFilterByIndex(0);
+    homePage.assertTagInHeader();
+    homePage.assertTagInArticle();
   }
 }

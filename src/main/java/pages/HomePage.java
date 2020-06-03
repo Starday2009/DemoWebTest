@@ -6,19 +6,21 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import utils.WebDriverFactory;
 
+
 import static pages.PagesURLs.base;
 
 public class HomePage {
   WebDriver driver;
   CommonActions commonActions;
 
-  String firstFilterName;
-  String secondFilterName;
+  String selectedFilterName;
 
   private By hashTagList =
-          By.xpath("//a[contains(@class, 'tag-default tag-pill ng-binding ng-scope') and child::text()]");
+      By.xpath(
+          "//a[contains(@class, 'tag-default tag-pill ng-binding ng-scope') and child::text()]");
   private By currentHashTag =
       By.xpath("//a[contains(@class, 'nav-link active ng-binding') and child::text()]");
+  private By tagInArticleList = By.xpath("//ul[contains(@class,  'tag-list') and child::text()]");
 
   public HomePage() {
     this.driver = WebDriverFactory.getDriver();
@@ -31,29 +33,26 @@ public class HomePage {
     driver.get(base);
   }
 
-  @Step("Select filter #test")
-  public void selectFirstFilter() {
-    firstFilterName = commonActions.find(hashTagList).findElements(hashTagList).get(0).getText();
-    commonActions.find(hashTagList).findElements(hashTagList).get(0).click();
-  }
-
   @Step("Assert test tag is displayed")
-  public void assertTestTag() {
+  public void assertTagInHeader() {
     commonActions.loggerPrint("Assert that #test tag is displayed");
-    String filterName = commonActions.find(currentHashTag).getText();
-    Assert.assertEquals(filterName, firstFilterName);
+    String filterNameInHeader = commonActions.find(currentHashTag).getText();
+    Assert.assertEquals(filterNameInHeader, selectedFilterName);
   }
 
-  @Step("Select filter #dragons")
-  public void selectSecondFilter() {
-    secondFilterName = commonActions.find(hashTagList).findElements(hashTagList).get(2).getText();
-    commonActions.find(hashTagList).findElements(hashTagList).get(2).click();
+  @Step("Select filter by index")
+  public void selectFilterByIndex(Integer index) {
+    selectedFilterName =
+        commonActions.find(hashTagList).findElements(hashTagList).get(index).getText();
+    commonActions.find(hashTagList).findElements(hashTagList).get(index).click();
   }
 
-  @Step("Assert #dragons tag is displayed")
-  public void assertDragonsTag() {
-    commonActions.loggerPrint("Assert that #dragons tag is displayed");
-    String filterName = commonActions.find(currentHashTag).getText();
-    Assert.assertEquals(filterName, secondFilterName);
+  @Step
+  public void assertTagInArticle() {
+    Object[] tagInArticleListArray = commonActions.find(tagInArticleList).findElements(tagInArticleList).toArray();
+    for (int i = 0; i < tagInArticleListArray.length; i++) {
+      String tag = commonActions.find(tagInArticleList).findElements(tagInArticleList).get(i).getText();
+      Assert.assertTrue(tag.contains(selectedFilterName));
+    }
   }
 }
